@@ -65,3 +65,10 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}

@@ -61,6 +61,20 @@ body {
   min-height: 100vh;
 }
 
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--color-grey-light-4);
+  padding: 2.5rem;
+}
+
 .logo {
   height: 3.25rem;
   margin-left: 2rem;
@@ -115,6 +129,11 @@ body {
 }
 .search__button:hover .search__icon {
   fill: var(--color-grey-dark-2);
+}
+
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .user-nav {
@@ -183,9 +202,13 @@ body {
 .sidebar {
   background-color: var(--color-grey-dark-1);
   flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
   background-color: var(--color-white);
   flex: 1;
+  min-height: 80rem;
 }
