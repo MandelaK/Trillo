@@ -10,7 +10,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: var(--color-white);
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: var(--border-bottom-light);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,7 @@
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
-  flex: 0 0 20%;
+  flex: 0 018%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
