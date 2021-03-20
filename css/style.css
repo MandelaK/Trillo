@@ -84,9 +84,16 @@ a:visited {
 .button-inline:hover {
   color: var(--color-grey-dark-1);
 }
+.button-inline:hover span {
+  margin-left: 8px;
+}
 .button-inline:focus {
   outline: none;
   animation: pulsate 1s infinite;
+}
+.button-inline span {
+  margin-left: 3px;
+  transition: margin-left 0.2s;
 }
 
 @keyframes pulsate {
@@ -225,6 +232,57 @@ a:visited {
 .recommend__photo:hover {
   transform: scale(1.2);
   border: 1px solid white;
+}
+
+.review {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.review::before {
+  content: "\201C";
+  position: absolute;
+  top: -3rem;
+  left: -1rem;
+  font-size: 20rem;
+  color: var(--color-grey-light-2);
+  font-family: sans-serif;
+  line-height: 1;
+  z-index: 1;
+}
+.review__text {
+  z-index: 10;
+  position: relative;
+}
+.review__user {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.review__photo {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+.review__user-box {
+  margin-right: auto;
+}
+.review__user-name {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.review__user-date {
+  font-size: 1rem;
+}
+.review__rating {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  font-weight: 300;
 }
 
 .search {
@@ -407,6 +465,7 @@ a:visited {
 }
 
 .detail {
+  font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
@@ -424,4 +483,7 @@ a:visited {
 
 .user-reviews {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
