@@ -9,6 +9,11 @@
     font-weight: 300;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: $bp-phone-large) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
   }
 
   &__stars {
@@ -21,6 +26,11 @@
     width: 2rem;
     height: 2rem;
     fill: var(--color-primary);
+
+    @media only screen and (max-width: $bp-phone-large) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 
   &__icon-location {
@@ -43,10 +53,19 @@
     justify-content: center;
     margin-left: 3rem;
 
+    @media only screen and (max-width: $bp-phone-large) {
+      padding: 0 1.5rem;
+      margin-left: 1.8rem;
+    }
+
     &-average {
       font-size: 2.25rem;
       font-weight: 300;
       margin-bottom: -0.5rem;
+
+      @media only screen and (max-width: $bp-phone-large) {
+        font-size: 1.8rem;
+      }
     }
 
     &-count {
@@ -76,10 +95,19 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media only screen and (max-width: $bp-phone-medium) {
+    padding: 2.5rem 0;
+    margin: 2.5rem 0;
+  }
+
   &__item {
     flex: 0 0 50%;
     margin-bottom: 0.7rem;
     text-transform: capitalize;
+
+    @media only screen and (max-width: $bp-phone-small) {
+      font-size: 1.2rem;
+    }
 
     &::before {
       content: "";
@@ -87,6 +115,10 @@
       height: 1rem;
       width: 1rem;
       margin-right: 0.7rem;
+
+      @media only screen and (max-width: $bp-phone-small) {
+        margin-right: 0.5rem;
+      }
 
       background-color: var(--color-primary);
       -webkit-mask-image: url(../img/chevron-thin-right.svg);
@@ -105,6 +137,10 @@
   align-items: center;
   justify-content: space-between;
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -113,7 +149,7 @@
     border: 3px solid white;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
 
     &:hover {
@@ -133,6 +169,11 @@
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+
+  @media only screen and (max-width: $bp-tab-portrait) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 
   &::before {
     content: "\201C";
@@ -192,10 +233,22 @@
   padding: 3.5rem 0;
   text-align: center;
 
+  @media only screen and (max-width: $bp-tab-portrait) {
+    padding: 2.5rem 0;
+  }
+
   &__heading {
     font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
+
+    @media only screen and (max-width: $bp-tab-portrait) {
+      font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: $bp-phone-large) {
+      font-size: 1.6rem;
+    }
   }
 }

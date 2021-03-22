@@ -38,6 +38,13 @@ Grey dark 3: #999
   --line: 1px solid var(--color-grey-light-2);
 }
 
+$bp-laptop: 75em; // 1200px
+$bp-tab-landscape: 68.75em; // 1100px
+$bp-tab-portrait: 56.25em; // 90px
+$bp-phone-large: 37.5em; // 600px
+$bp-phone-medium: 31.25em; // 500px
+$bp-phone-small: 26.25em; // 420px
+
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +59,10 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px
+
+  @media only screen and (max-width: $bp-tab-landscape) {
+    font-size: 50%;
+  }
 }
 
 body {

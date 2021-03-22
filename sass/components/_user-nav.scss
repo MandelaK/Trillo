@@ -15,12 +15,18 @@
       background-color: var(--color-grey-light-2);
     }
 
-    &:active {
-      background-color: var(--color-grey-light-3);
+    @media (hover: hover) {
+      &:active {
+        background-color: var(--color-grey-light-3);
+      }
     }
   }
   &__icon-box {
     position: relative;
+
+    @media only screen and (max-width: $bp-phone-medium) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__icon {
@@ -40,6 +46,11 @@
     top: 1.3rem;
     right: 1.2rem;
     text-align: center;
+
+    @media only screen and (max-width: $bp-phone-medium) {
+      top: 0;
+      right: 0.6rem;
+    }
   }
 
   &__user-photo {
